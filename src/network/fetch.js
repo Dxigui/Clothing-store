@@ -18,7 +18,10 @@ export default function fetch (options) {
     })
     // 拦截响应
     instance.interceptors.response.use(res => {
-      return res
+      // console.log('axios', res)
+      if (res.status === 200) {
+        return res
+      }
     }, err => {
       return err
     })
