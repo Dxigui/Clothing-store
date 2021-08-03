@@ -22,7 +22,7 @@ export default {
       return this.$route.path.indexOf(this.link) !== -1
     },
     activeStyle () {
-      return this.isActive ? { color: 'red' } : {}
+      return this.isActive ? { color: '#FF5777' } : {}
     }
   },
   methods: {
@@ -34,5 +34,25 @@ export default {
 </script>
 
 <style scoped>
-
+.tab-bar-item {
+  flex: 1;
+}
+.item-icon,
+.item-text,
+.item-active-icon {
+  /* width: 100%;
+  vertical-align: middle;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+}
+.item-icon>img,
+.item-active-icon>img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.item-text {
+  font-size: .8rem;
+  padding-top: .15rem;
+}
 </style>
