@@ -1,10 +1,12 @@
 <template>
   <div id="app">
+    <section class="wrap">
     <keep-alive exclude="Detail">
       <router-view />
     </keep-alive>
     <!-- 底部组件 -->
     <main-tab-bar />
+    </section>
   </div>
 </template>
 
@@ -21,4 +23,8 @@ export default {
 
 <style>
   @import "assets/css/base.css";
+.wrap {
+  overflow-x: hidden;
+  position: relative;
+}
 </style>

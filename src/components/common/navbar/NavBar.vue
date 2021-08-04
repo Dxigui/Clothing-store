@@ -22,6 +22,7 @@ export default {
 <style scoped>
 .nav-bar {
   position: fixed;
+  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -28,6 +28,7 @@ export default function fetch (options) {
     // 发送请求
     instance(options)
       .then(res => {
+        // console.log('axios', res)
         resolve(res)
       })
       .catch(err => {

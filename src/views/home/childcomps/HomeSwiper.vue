@@ -69,7 +69,7 @@ export default {
 }
 .banner-image img{
   width: 100%;
-  height: 16rem;
+  height: 15rem;
   vertical-align: middle;
 }
 </style>
